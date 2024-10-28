@@ -14,11 +14,11 @@ const FeaturedPostSkeleton = () => {
       </div>
 
       {/* Side Posts Skeleton */}
-      <div className="w-full md:w-1/2 grid grid-cols-2 gap-1 h-96">
+      <div className="w-full md:w-1/2 grid md:grid-cols-2 gap-1 md:h-96">
         {Array.from({ length: 4 }).map((_, index) => (
           <div
             key={index}
-            className="relative h-full overflow-hidden group bg-gray-300 animate-pulse"
+            className="relative h-56 md:h-full overflow-hidden group bg-gray-300 animate-pulse"
           >
             <div className="absolute inset-0 w-full h-full bg-gray-300"></div>
             <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4">

@@ -100,12 +100,12 @@ const FeaturedSection = () => {
           })}
 
           {/* Side Posts */}
-          <div className="w-full md:w-1/2 grid grid-cols-2 gap-1 h-96">
+          <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-1 md:h-96 ">
             {posts.slice(1, 5).map((post) => (
               <Link
                 to={`/post/${post.slug}`}
                 key={post.id}
-                className="relative h-full overflow-hidden group"
+                className="relative md:h-full overflow-hidden group h-56"
               >
                 <img
                   src={`${imageUrl}${post.post_image}`}
